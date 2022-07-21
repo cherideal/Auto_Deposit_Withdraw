@@ -1,4 +1,8 @@
 # Auto_Deposit_Withdraw
+### pre setup
+please install nodejs first
+https://nodejs.org/zh-cn/download
+
 ### eth config
 create eth_config.json in root path
 ```json
