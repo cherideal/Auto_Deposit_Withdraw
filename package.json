@@ -10,19 +10,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "decimal.js": "^10.2.1",
-    "ethers": "^5.0.8",
-    "fs": "0.0.1-security",
-    "deasync": "^0.1.21",
+    "@ethersproject/abi": "^5.0.2",
     "@ethersproject/address": "^5.0.2",
     "@ethersproject/contracts": "^5.0.2",
-    "@ethersproject/abi": "^5.0.2",
     "@ethersproject/networks": "^5.0.2",
     "@ethersproject/providers": "^5.0.5",
     "@ethersproject/solidity": "^5.0.2",
     "@types/big.js": "^4.0.5",
     "babel-plugin-transform-jsbi-to-bigint": "^1.3.1",
-    "tsdx": "^0.12.3"
+    "deasync": "^0.1.21",
+    "decimal.js": "^10.2.1",
+    "ethers": "^5.0.8",
+    "fs": "0.0.1-security",
+    "tsdx": "^0.14.1"
   },
   "devDependencies": {
     "strip-json-comments": "^3.1.1"

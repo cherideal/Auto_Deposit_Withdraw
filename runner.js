@@ -3,7 +3,6 @@ const ethers = require('ethers')
 const fs = require('fs')
 let { loadConfig } = require('./config')
 let ERC20Json = require('./abi/IERC20')
-const { sleep } = require("deasync");
 
 const runner = async (configPath, logPath) => {
     const file = fs.createWriteStream(logPath, { flags: 'a' })
@@ -141,7 +140,8 @@ const runner = async (configPath, logPath) => {
             } catch (e) {
                 console.log(e);
             }
-            sleep(10)
+
+            await new Promise(r => setTimeout(() => r(), 10000));
         }
     } catch (e) {
         console.log(e);
