@@ -1,0 +1,12 @@
+{
+  "rpc":"https://mainnet.infura.io/v3",
+  "chainId":1,
+  "usdtContractAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+  "myPrivateKey": "",
+  "watchPrivateKey": "",
+  "gasPriceLimit": 200,
+  "depositLine": 30000,
+  "depositTarget": 50000,
+  "withdrawLine": 100000,
+  "withdrawTarget": 50000
+}

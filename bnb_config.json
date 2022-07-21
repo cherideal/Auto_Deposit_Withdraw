@@ -1,0 +1,12 @@
+{
+  "rpc": "https://bsc-dataseed1.ninicoin.io",
+  "chainId": 56,
+  "usdtContractAddress": "0x55d398326f99059fF775485246999027B3197955",
+  "myPrivateKey": "",
+  "watchPrivateKey": "",
+  "gasPriceLimit": 100,
+  "depositLine": 30000,
+  "depositTarget": 50000,
+  "withdrawLine": 100000,
+  "withdrawTarget": 50000
+}
