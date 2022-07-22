@@ -2,6 +2,7 @@
   "rpc":"https://mainnet.infura.io/v3",
   "chainId":1,
   "usdtContractAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+  "sleepTime": 10,
   "myPrivateKey": "",
   "watchPrivateKey": "",
   "gasPriceLimit": 200,

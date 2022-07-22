@@ -15,6 +15,7 @@ const runner = async (configPath, logPath) => {
         let lastWatchUSDTBalance = new Decimal("0");
         let lastMyETHBalance = new Decimal("0")
         let lastWatchETHBalance = new Decimal("0")
+        let sleepTime = 10
         while(true) {
             try {
                 let config = loadConfig(configPath)
@@ -28,6 +29,7 @@ const runner = async (configPath, logPath) => {
                 if (once_global === 0) logger.log("my address", myAddress)
                 if (once_global === 0) logger.log("watch address", watchAddress)
                 once_global = 1
+                sleepTime = config.sleepTime
 
                 let myUSDTContract = new ethers.Contract(config.usdtContractAddress, ERC20Json, provider).connect(myWallet)
                 let watchUSDTContract = new ethers.Contract(config.usdtContractAddress, ERC20Json, provider).connect(watchWallet)
@@ -141,7 +143,7 @@ const runner = async (configPath, logPath) => {
                 console.log(e);
             }
 
-            await new Promise(r => setTimeout(() => r(), 10000));
+            await new Promise(r => setTimeout(() => r(), 1000 * sleepTime));
         }
     } catch (e) {
         console.log(e);
